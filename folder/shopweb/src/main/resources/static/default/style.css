@@ -1,0 +1,33 @@
+.frontend-advertisment-default .advertisment-bound{
+}
+.frontend-advertisment-default .advertisment-bound img{
+	margin:0 auto;
+}
+.frontend-advertisment-default .advertisment-bound embed{
+}
+.frontend-advertisment-default .advertisment-bound a{
+	color:#000;
+}
+#slide_partner {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 68px !important;
+	padding:0px 15px;
+}
+
+#slide_partner #SlideLogo {
+        height: 100% !important;
+    }
+
+#SlideLogo .item {
+    float: left;
+}
+
+    #SlideLogo .item a img {
+        border: 1px solid #ccc;
+        background-color: white;
+        margin: 0 5px;
+        display: block;
+        max-height: 60px;
+    }

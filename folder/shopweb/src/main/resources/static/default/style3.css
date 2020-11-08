@@ -1,0 +1,39 @@
+.frame3-default-bound{
+	clear:both;
+	margin-bottom:10px;
+	position:relative;
+}
+.frame3-default-title{
+	background:url(../images/bg_top_bar.png) no-repeat;
+	color:#000 !important;
+	text-shadow: 0.1em 0.1em 0.05em #fff;
+	height:41px;
+	line-height:28px;
+	font-size:15px;
+	font-weight:bold;
+	text-align:left;
+	padding-left:25px;
+	font-family:UVNBaiSau_R;
+}
+.frame3-default-icon{
+	float:left;
+	padding-right:5px;
+}
+.frame3-default-title-center{
+}
+.frame3-default-title-center a,
+.frame3-default-title-center a:hover{
+	
+}
+.frame3-default-content{
+	border-left:#DEDEDE solid 1px;
+	border-right:#DEDEDE solid 1px;
+	background:url(images/bg_date1.png) bottom left repeat-x;
+	width:200px;
+	background:#F5F5F5;
+	overflow:hidden;
+}
+.frame3-default-bottom{
+	background:url(../images/bg_bottom_bar.png) bottom left no-repeat;
+	height:12px;
+}

@@ -1,0 +1,25 @@
+.frontend-advertisment-simple_slide .advertisment-bound{
+}
+.frontend-advertisment-simple_slide .advertisment-bound img{
+		
+}
+.frontend-advertisment-simple_slide .advertisment-bound embed{
+}
+.frontend-advertisment-simple_slide .advertisment-bound a{
+	color:#000;
+}
+.simple-slide {
+    position:relative;
+	list-style:none;
+}
+
+.simple-slide li{
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+	height:155px;
+}
+.simple-slide img{
+	height:155px;
+}

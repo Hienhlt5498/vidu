@@ -1,0 +1,512 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:th="http://www.thymeleaf.org"
+xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi" lang="vi-VN">
+<head>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="robots" content="ALL" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Cửa hàng thực phẩm chay</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"/>
+	<link rel="stylesheet" href="/css/global.css" type="text/css" th:href="@{/css/global.css}" />
+	<link rel="stylesheet" href="/css/style.css" type="text/css" th:href="@{/css/style.css}"/>
+	<link rel="shortcut icon" href="/images/logo-phuclamchay.png" th:href="@{/images/logo-phuclamchay.png}"/>
+	<link href="https://fonts.googleapis.com/css?family=Lobster|Saira+Extra+Condensed" rel="stylesheet"/>
+	<link rel="stylesheet" type="/text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="/default/phonering.css" type="text/css" th:href="@{/default/phonering.css}"/>
+	<link rel="stylesheet" href="/default/style.css" type="text/css" th:href="@{/default/style.css}"/>
+	<link rel="stylesheet" href="/default/style2.css" type="text/css" th:href="@{/default/style2.css}"/>
+	<link rel="stylesheet" href="/skins/oto/css/minhtc.css" type="text/css" th:href="@{/skins/oto/css/minhtc.css}"/>
+	<script type="text/javascript" src="/js/superfish.js" th:src="@{/js/superfish.js}"></script>
+	<link rel="stylesheet" href="/default/superfish.css" type="text/css" th:href="@{/default/superfish.css}"/>
+	<link rel="stylesheet" href="/default/simple_slide.css" type="text/css" th:href="@{/default/simple_slide.css}"/>
+	<link rel="stylesheet" href="/default/style3.css" type="text/css" th:href="@{/default/style3.css}"/>
+	<link rel="stylesheet" href="/default/product.css" type="text/css" th:href="@{/default/product.css}"/>
+	<link rel="stylesheet" href="/default/home.css" type="text/css" th:href="@{/default/home.css}"/>
+	<link rel="stylesheet" href="/skins/oto/css/home.css" type="text/css" th:href="@{/skins/oto/css/home.css}"/>
+	
+	<link rel="stylesheet" type="/text/css" href="/css/stylecarousel.css" th:href="@{/css/stylecarousel.css}"/>
+	<script type="text/javascript" src="/js/highslide-with-gallery.js" th:src="@{/js/highslide-with-gallery.js}"></script>
+	<link rel="stylesheet" type="text/css" href="/default/highslide.css" th:href="@{/default/highslide.css}"/>
+	<link rel='stylesheet' id='language-selector-css'  href='/default/language-selector-click.css' type='text/css' media='all' th:href="@{/default/language-selector-click.css}"/>
+	<link rel='stylesheet' id='novelis_combined_css-css'  href='/default/style.min.css' type='text/css' media='all' th:href="@{/default/style.min.css}"/>
+	<link href="/default/demo.css" rel="stylesheet" th:href="@{/default/demo.css}"/>
+	<link rel="stylesheet" type="text/css" href="/default/slideshow.css" th:href="@{/default/slideshow.css}"/>
+	<script type="text/javascript">
+		hs.graphicsDir = '/highslide/graphics/';
+		hs.align = 'center';
+		hs.transitions = ['expand', 'crossfade'];
+		hs.outlineType = 'rounded-white';
+		hs.fadeInOut = true;
+		hs.dimmingOpacity = 0.85;
+
+	// Add the controlbar
+	hs.addSlideshow({
+		//slideshowGroup: 'group1',
+		interval: 5000,
+		repeat: false,
+		useControls: true,
+		fixedControls: 'fit',
+		overlayOptions: {
+			opacity: .9,
+			position: 'bottom center',
+			hideOnMouseOut: true
+		}
+	});
+</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PR537Q6');</script>
+<!-- End Google Tag Manager -->
+<style>
+												.mnu-c1{
+													position:relative !important;	
+												}
+												.mnu-c1 ul{
+													display:block !important;
+/*		position:absolute;
+		top:0px;
+		left:200px;
+	border:#ccc solid 1px;
+		width:200px !important;
+		*/	
+		background:#fafafa !important;
+	}
+	.mnu-c1:hover ul{
+		display:block !important;
+		z-index:9999999 !important;	
+		color:#C00 !important;
+	}
+	.hpc-bound li ul li a:hover, .nav0 li ul li a:hover, .hpc-bound li ul li a.selected, .nav0 li ul li a.selected, .nav0 li:hover{color:#d0380c !important; background:#DADADA}
+	.mainmenu{
+						padding:0px 5px !important;	
+						position:relative;	
+					}
+					.mainmenu:hover ul{
+						display:block;	
+						position:absolute;
+						top:50px !important;
+						left:10px;
+						background:#0E2861;
+					}
+					.mainmenu ul li{
+						line-height:35px;
+						height:35px !important;
+						border-bottom:#BFBFBF solid 1px;
+						width:200px !important;
+						padding-left:20px;
+					}
+					.mainmenu ul li a, .mainmenu ul li a:hover, .mainmenu ul li a:visited{
+						color:#FFF !important;	
+						font-size:15px !important;
+					}
+					.submenu{
+						list-style:none;
+						display:none;	
+					}
+					.bg-home-menu{
+						height:45px; background:#75AC13 url("../skins/oto//images/bg_menu_top.jpg") top left repeat-x; 
+					}
+
+					@media all and (max-width: 800px) {
+						.menu-search{
+							position:absolute;
+							left:5px;
+							top:5px;
+						}
+						.menu-cart{
+							position:absolute;
+							top:-5px;
+							left:60%;
+							z-index:9999999;
+
+						}
+					}
+					@media all and (max-width: 480px) {
+						.menu-search{
+							position:absolute;
+							left:5px;
+							top:5px;
+						}
+						.menu-cart{
+							position:absolute;
+							top:-5px;
+							left:50%;
+							z-index:9999999;
+
+						}
+					}
+					
+					.active {
+						background: #012169;
+						color: #fff !important;
+					}
+</style>
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR537Q6"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="simple-layout-bound">
+		<div class="simple-layout-content">
+			<div class="simple-layout-banner">
+				<div id="module_73298">
+					<div class="site-container" >
+						<header class="site-header " itemscope itemtype="http://schema.org/WPHeader">
+							<div class="wrap" style="position:relative;  ">
+								<div style="max-width:1024px; margin:0 auto;">
+									<div id="module_75224">
+										<div class="frontend-advertisment-default">
+											<div class="advertisment-bound" style=" ">
+												<a th:href="@{/}">
+													<img src="/images/anlacbaner.jpg" title="banner" alt="banner"   style="" />
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="bg-home-menu">
+									<div class="col-sm-4" style="margin-top:0px"></div>
+									<div class="widget-area header-widget-area col-sm-12 header-right ">
+										<section id="search-3" class="widget widget_search">
+											<div class="widget-wrap menu-search">
+												<form th:action="@{/searchform}" method="post" class="search-form form-inline" role="search">
+													<div class="form-group">
+														<label class="sr-only sr-only-focusable" for="novelis-search-form"></label>
+														<div class="input-group">
+															<span class="input-group-btn">
+																<button type="submit" class="search-submit btn btn-default">
+																	<i class="fa fa-search"></i>
+																	<span class="sr-only">placeholder</span>
+																</button>
+															</span>
+															<input type="search" class="search-field form-control" id="novelis-search-form" name="name" Search this website &#x2026;="Search" placeholder="Search"/>
+														</div>
+													</div>
+													<input type="hidden" name="form_block_id" value="73298" />
+												</form >
+											</div>
+										</section>
+										<section id="icl_lang_sel_widget-2" class="widget widget_icl_lang_sel_widget  menu-cart">
+											<div class="widget-wrap">
+												<div id="lang_sel_click" 
+												class="lang_sel_click" >
+												<ul>
+													<li>
+														<a onclick="javascript:window.location.href='/cart'; return false;" class="lang_sel_sel icl-en">Giỏ hàng: 
+															<span style="color:#F00; font-weight:bold" id="cart_total" th:text="${sizeCart}"></span>
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</section>
+								</div>
+								
+								<div class="wrapper">
+									<div class="main">
+										<!-- Nav -->
+										<nav class="nav">
+											<ul class="nav-list" >
+												<li class="nav-item">
+													<a th:href="@{/}">Trang chủ</a>
+												</li>
+												<li class="nav-item">
+													<a href="/xem-tin-tuc/gioi-thieu-chung.html">Giới thiệu</a>
+												</li>
+												<li class="nav-item">
+													<a href="#">Sản phẩm</a>
+													<ul class="nav-submenu">
+														
+														
+														
+											     			<li th:each="item : ${listCategory}" class="nav-submenu-item">
+																<a th:href="@{/category/(id=${item.id})}" th:text="${item.name}"></a>
+															</li>
+														
+													</ul>
+												</li>
+												<li class="nav-item">
+													<a href="tin-tuc/huong-dan/">Hướng dẫn</a>
+													<ul class="nav-submenu">
+														<li class="nav-submenu-item">
+															<a href="tin-tuc/huong-dan-mua-hang/">Hướng dẫn mua hàng</a>
+														</li>
+														<li class="nav-submenu-item">
+															<a href="tin-tuc/phuong-thuc-thanh-toan/">Phương thức thanh toán</a>
+														</li>
+													</ul>
+												</li>
+												<li class="nav-item">
+													<a href="/lien-he.html" title="Liên hệ">Liên hệ</a>
+												</li>
+												
+												<li class="nav-item">
+													<a href="#">Tài khoản</a>
+													<ul class="nav-submenu">
+														<li class="nav-submenu-item">
+															<a th:href="@{/login}">Đăng nhập</a>
+														</li>
+														<li class="nav-submenu-item">
+															<a th:href="@{register}">Đăng kí</a>
+														</li>
+														
+													</ul>
+												</li>
+											</ul>
+										</nav>
+										<!-- /Nav -->
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</header>
+				</div>
+				
+			</div>
+		</div>
+		<div class="simple-layout-center">
+			<div id="module_75948">
+				<div class="content-div-bound">
+					
+<div class="column-right" style="width: 100%;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-5">
+				<img th:src="@{${account.avatar}}" id="avatar" alt="" style="display: block;margin: auto;width: 60%;"/>
+				<div class="form-group">
+					<div class="form-group text-center" style="margin-top: 15px;">
+						<label class="label-file" for="inputFile" style="display: none;">Đổi ảnh đại diện
+							<input type="file" name="inputFile" class="form-control" style="display: none;" id="inputFile" th:onchange="'javascript:uploadAvatar(event);'"/></label>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-7" style="width: 60%;">
+				<div class="form-group">
+							<input type="text" name="name" disabled="disabled" class="form-control" id="inputName" th:value="${account.name}"/>
+				</div>
+				<div class="form-group">
+							<input type="text" name="userName" disabled="disabled" class="form-control" id="inputUserName" th:value="${account.userName}"/>
+				</div>
+				<div class="form-group">
+							<input type="text" name="phone" disabled="disabled" class="form-control" id="inputPhone" th:value="${account.phone}"/>
+				</div>
+				<div class="form-group">
+							<input type="text" name="address" disabled="disabled" class="form-control" id="inputAddress" th:value="${account.address}"/>
+				</div>
+				<div class="form-group">
+							<input type="text" name="email" disabled="disabled" class="form-control" id="inputEmail" th:value="${account.email}"/>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			
+				<div class="col-md-12" style="width: 90%;">
+				<div class="message-update" role="alert">
+  
+			</div>
+					<button onclick="clickEdit()" class="btn btn-info btn-edit" style="float: right;width: 10%;">Sửa</button>
+					<button onclick="update()" class="btn btn-info btn-update" style="float: right;width: 10%;display: none;">Lưu</button>
+				</div>
+			
+		</div>
+		
+	</div>
+</div>
+</div></div>
+    <div class="clear"></div>
+</div>
+
+		<div class="simple-layout-footer">
+<div id="module_76040">﻿
+<div class="footer-bound"  style="position: relative; padding:10px; text-align:center;">
+			<div>
+				<strong> CỬA HÀNG THỰC PHẨM CHAY AN LẠC </strong>
+			</div>
+			<div>Điện thoại: 0972.821.843</div>
+			<div>CS1: 26A Thụy Khu&ecirc; - T&acirc;y Hồ - H&agrave; Nội&nbsp;</div>
+			<div>CS2: Ng&otilde; 90 Cửa Bắc - Ba Đ&igrave;nh - H&agrave; Nội ( C&aacute;ch mặt đường 10m )</div>
+			<div>Website: www.anlacchay.vn - Email:&nbsp; anlacchayhanoi@gmail.com</div>
+		</div>
+</div>
+</div>
+</div>
+</div>														
+																					
+																					
+																						
+																						
+																						
+																					
+																				
+
+		<style>
+			.footer-bound div{
+				color:#fff !important
+			}
+		</style>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript"></script>
+		<script type="text/javascript">
+																					
+																						
+	
+	function clickEdit() {
+		jQuery('#inputName').prop("disabled", false);
+		jQuery('#inputUserName').prop("disabled", false);
+		jQuery('#inputPhone').prop("disabled", false);
+		jQuery('#inputAddress').prop("disabled", false);
+		jQuery('#inputEmail').prop("disabled", false);
+		jQuery('#inputFile').prop("disabled", false);
+		jQuery(".label-file").css("display", "block");
+		jQuery(".btn-edit").css("display", "none");
+		jQuery('.btn-update').css("display", "block");
+	}
+	
+	var imageName = "";
+	var base64 = "";
+	function uploadAvatar(evt) {
+		evt.stopPropagation();
+	    evt.preventDefault();
+	 
+	    // FileList object.
+	    var files = evt.target.files;
+	 
+	    var file = files[0];
+	 
+	    var fileReader = new FileReader();
+	 
+	 
+	    fileReader.onload = function(progressEvent) {
+	        var url = fileReader.result;
+	 
+	        // Something like: data:image/png;base64,iVBORw...Ym57Ad6m6uHj96js
+	        console.log(file.name);
+	        //
+	        var myImg = document.getElementById("avatar");
+	        myImg.src= url;
+	        base64 = url;
+	        imageName = file.name
+	    }
+	 
+	 
+	    // Read file asynchronously.
+	    fileReader.readAsDataURL(file); // fileReader.result -> URL.
+	}
+	
+	function update() {
+		console.log(imageName + base64);
+		
+		jQuery.ajax({
+			method: "POST",
+			url: '/updateinfo',
+			data : {
+				'name':jQuery('#inputName').val(),
+				'username':jQuery('#inputUserName').val(),
+				'phone':jQuery('#inputPhone').val(),
+				'address':jQuery('#inputAddress').val(),
+				'email':jQuery('#inputEmail').val(),
+				'image': base64,
+				'imageName': imageName
+			},
+			beforeSend: function(){
+				
+				
+			},
+			success: function(content){
+				console.log(content);
+					
+					
+					jQuery('.message-update').fadeIn("slow").animate({opacity: 1.0}, 1500).text(content);
+					setTimeout(function(){
+						jQuery('.message-update').fadeOut(1000, function() {
+							location.reload();
+						});
+						}, 1000);
+					
+					jQuery('#inputName').prop("disabled", true);
+					jQuery('#inputUserName').prop("disabled", true);
+					jQuery('#inputPhone').prop("disabled", true);
+					jQuery('#inputAddress').prop("disabled", true);
+					jQuery('#inputEmail').prop("disabled", true);
+					jQuery(".label-file").css("display", "none");
+					jQuery(".btn-edit").css("display", "block");
+					jQuery('.btn-update').css("display", "none");
+				},
+				error: function() {
+					jQuery('.message-update').fadeIn("slow").animate({opacity: 1.0}, 1500).text('Cập nhật thông tin không thành công');
+					jQuery('.message-update').fadeOut("slow");
+				}
+			});
+		
+		
+	}
+	
+	
+	 
+
+</script>
+	<script type="text/javascript">
+		query_string = "?gclid%3DCjwKCAjwvOHzBRBoEiwA48i6AoBSWBfnRJOfAkk1VVSNz0FxyBRquhqPnAaPFGZ5zUiuMOO4WiM3ahoCbYQQAvD_BwE";
+		PORTAL_ID = "oto";
+		jQuery.noConflict();
+	</script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="/js/common.js" type="text/javascript" th:src="@{/js/common.js}"></script>
+	<script src="/js/lib.js" type="text/javascript" th:src="@{/js/lib.js}"></script>
+<script src="/js/flaunt.js" th:href="@{/js/flaunt.js}"></script>
+<script type='text/javascript' src='/js/language-selector.js' th:src="@{/js/language-selector.js}"></script>
+<script type="text/javascript" src="/js/wowslider.js" th:src="@{/js/wowslider.js}"></script>
+<script type="text/javascript" src="/js/script.js" th:src="@{/js/script.js}"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147455764-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-147455764-1');
+	
+	
+</script>
+<script type="text/javascript">
+jQuery(function(){
+	jQuery('.navigate-content li').hover(
+		function(){
+			var obj = jQuery(this);
+			obj.children('.navigate-childs').css('visibility','visible');
+		},
+		function(){
+			var obj = jQuery(this);
+			obj.children('.navigate-childs').css('visibility','hidden');
+		}
+	);
+	var pos = jQuery('.navigate-item-detail').position();
+	if(pos){
+		jQuery('.navigate-item-detail').css({
+			'width': 950-parseInt(pos.left),
+			'text-align': 'left'
+		});
+	}
+	
+
+});
+
+
+</script>
+<script>
+
+</script>
+</body>
+</html>
